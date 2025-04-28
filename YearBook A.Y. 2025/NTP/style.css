@@ -1,0 +1,189 @@
+body {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: #f0e6d2;
+  background-image: url('BGMain1.jpg');
+  background-size: contain;
+  background-repeat: repeat;
+  background-position: center;
+  min-height: 100vh;
+  margin: 0;
+  position: relative; /* Needed for absolute positioning of title */
+}
+
+.container {
+  max-width: 1500px;
+  margin: 10px auto;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: transparent; /* Make the container transparent */
+}
+
+.header {
+  color: hsl(0, 0%, 100%);
+  font-size: 3em;
+  margin-bottom: 200px; /* Consider adjusting or removing as needed */
+}
+
+.top-left {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  display: flex;
+  align-items: center;
+  z-index: 10;
+}
+
+.top-left-year {
+  color: #ffffff;
+  font-size: 2.5em;
+}
+
+.top-left-text {
+  color: #fabc00;
+  font-size: 1.3em;
+  margin-left: 10px;
+}
+
+.top-right {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 10;
+}
+
+.top-right-image {
+  width: 50px;
+  height: auto;
+}
+
+.title-holder {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  padding: 15px 20px;
+  background-color: rgba(255, 255, 255, 0); /* Make the title holder transparent */
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0); /* Remove shadow for transparency */
+  z-index: 5;
+}
+
+.title-holder h1 {
+  font-size: 2.5em;
+  color: #ffffff;
+  margin: 0;
+}
+
+.department-title {
+  font-size: 2.2em;
+  color: #ffffff;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  text-align: left;
+  border-bottom: 5px solid #fabc00;
+  padding-bottom: 5px;
+}
+
+.person-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.person-card { /*Size ng Box - White*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  padding: 100px;
+  border-radius: 100px;
+  background-color: transparent; /* Make the person card transparent */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Keep the shadow if desired */
+  text-align: center;
+  transition: background-color 0.3s ease-in-out; /* Add transition for smooth animation */
+}
+
+.person-card:hover {
+  background-color: rgba(128, 0, 0, 0.5); /* Transparent maroon on hover */
+}
+
+.person-card img { /* Pictures Inside the Box - Size*/
+  width: 300px;
+  height: 300px;
+  border-radius: 100%;
+  margin-bottom: 70px;
+  object-fit: cover;
+}
+
+.person-card-info {
+  flex: 1;
+}
+
+.person-card-info h3 {
+  font-size: 2.2em;
+  color: #fabc00; /* Color Name*/
+  margin-bottom: 5px;
+}
+
+.person-card-info p {
+  font-size: 1em;
+  color: #ffffff;
+  margin-bottom: 5px;
+}
+
+.person-card-info {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/*Hover Button*/
+
+#back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 40px;
+  z-index: 99;      /* Ensure it's on top of other content */
+  border: none;
+  outline: none;
+  background-color: #670f0f;
+  color: rgb(255, 196, 0);      /* White text color */
+  cursor: pointer;  /* Show a pointer cursor on hover */
+  padding: 15px 20px;
+  border-radius: 10px;
+  font-size: 1em;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out; /* Smooth transition for opacity */
+}
+
+#back-to-top:hover {
+  background-color: #6b5835; /* Darker brown on hover */
+}
+
+#back-to-top.show {
+  opacity: 1; /* Make button visible when show class is added */
+}
+
+
+/*Copyright*/
+
+.copyright {
+  background-color: #670f0f; /* Maroon background */
+  color: #FFFFFF; /* White text */
+  padding: 20px;
+  text-align: center;
+  font-size: 0.9em;
+  border-top: 2px solid #670f0f; /* Darker maroon border */
+}
+
+.copyright a {
+  color: #FFFFFF; /* White link color */
+  text-decoration: none; /* Remove underline */
+}
+
+.copyright a:hover {
+  text-decoration: underline; /* Underline on hover */
+}

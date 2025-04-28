@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Georgia:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="custom.css">
+</head>
+<body>
+    <div class="top-left">
+        <span style="color: #ffffff; font-size: 2.5em;">'25</span>
+        <span class="top-left-text">San Sebastian College<br>Recoletos De Cavite</span>
+    </div>
+
+    <div class="top-right">
+        <img src="GSL.png" alt="School Logo" class="top-right-image">
+    </div>
+
+    <div class="title-holder">
+        <h1>NON - TEACHING PERSONEL</h1>
+    </div>
+    <div class="administrator- container">
+    </div>
+    <div class="administrator- container">
+    </div>
+    </div>
+    <div class="administrator- container">
+        <h2 class="department-title">FACULTY HEAD</h2>
+        <div class="person-grid admin-person-grid">
+            <div class="person-card admin-person-card">
+                <img src="SSCR Logo.png" alt="Admin Staff 1">
+                <div class="person-card-info admin-person-card-info">
+                    <h3>Alice Johnson</h3>
+                    <p>Position: Registrar</p>
+                    <p>Email: alice.johnson@sscrc.edu.ph</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="faculty- container">
+        <h2 class="department-title">FACULTIES</h2>
+        <div class="person-grid faculty-person-grid">
+            <div class="person-card faculty-person-card">
+                <img src="SSCR Logo.png" alt="Faculty Member 1">
+                <div class="person-card-info faculty-person-card-info">
+                    <h3>Dr. Jane Smith</h3>
+                    <p>Position: Professor</p>
+                    <p>Email: jane.smith@sscrc.edu.ph</p>
+                </div>
+            </div>
+            <div class="person-card faculty-person-card">
+                <img src="SSCR Logo.png" alt="Faculty Member 1">
+                <div class="person-card-info faculty-person-card-info">
+                    <h3>Dr. Jane Smith</h3>
+                    <p>Position: Professor</p>
+                    <p>Email: jane.smith@sscrc.edu.ph</p>
+                </div>
+            </div>
+            <div class="person-card faculty-person-card">
+                <img src="SSCR Logo.png" alt="Faculty Member 1">
+                <div class="person-card-info faculty-person-card-info">
+                    <h3>Dr. Jane Smith</h3>
+                    <p>Position: Professor</p>
+                    <p>Email: jane.smith@sscrc.edu.ph</p>
+                </div>
+            </div>
+            <div class="person-card faculty-person-card">
+                <img src="SSCR Logo.png" alt="Faculty Member 2">
+                <div class="person-card-info faculty-person-card-info">
+                    <h3>John Doe</h3>
+                    <p>Position: Lecturer</p>
+                    <p>Email: john.doe@sscrc.edu.ph</p>
+                </div>
+            </div>
+        </div>
+        <div class="person-grid faculty-person-grid">
+            <div class="person-card faculty-person-card">
+                <img src="SSCR Logo.png" alt="Faculty Member 1">
+                <div class="person-card-info faculty-person-card-info">
+                    <h3>Dr. Jane Smith</h3>
+                    <p>Position: Professor</p>
+                    <p>Email: jane.smith@sscrc.edu.ph</p>
+                </div>
+            </div>
+            <div class="person-card faculty-person-card">
+                <img src="SSCR Logo.png" alt="Faculty Member 1">
+                <div class="person-card-info faculty-person-card-info">
+                    <h3>Dr. Jane Smith</h3>
+                    <p>Position: Professor</p>
+                    <p>Email: jane.smith@sscrc.edu.ph</p>
+                </div>
+            </div>
+            <div class="person-card faculty-person-card">
+                <img src="SSCR Logo.png" alt="Faculty Member 2">
+                <div class="person-card-info faculty-person-card-info">
+                    <h3>John Doe</h3>
+                    <p>Position: Lecturer</p>
+                    <p>Email: john.doe@sscrc.edu.ph</p>
+                </div>
+            </div>
+        </div>
+        <div class="person-grid faculty-person-grid">
+            <div class="person-card faculty-person-card">
+                <img src="SSCR Logo.png" alt="Faculty Member 1">
+                <div class="person-card-info faculty-person-card-info">
+                    <h3>Dr. Jane Smith</h3>
+                    <p>Position: Professor</p>
+                    <p>Email: jane.smith@sscrc.edu.ph</p>
+                </div>
+            </div>
+            <div class="person-card faculty-person-card">
+                <img src="SSCR Logo.png" alt="Faculty Member 1">
+                <div class="person-card-info faculty-person-card-info">
+                    <h3>Dr. Jane Smith</h3>
+                    <p>Position: Professor</p>
+                    <p>Email: jane.smith@sscrc.edu.ph</p>
+                </div>
+            </div>
+            <div class="person-card faculty-person-card">
+                <img src="SSCR Logo.png" alt="Faculty Member 2">
+                <div class="person-card-info faculty-person-card-info">
+                    <h3>John Doe</h3>
+                    <p>Position: Lecturer</p>
+                    <p>Email: john.doe@sscrc.edu.ph</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="copyright">
+        &copy; 2025 San Sebastian College Recoletos de Cavite. All rights reserved.
+    </footer>
+
+    <button id="back-to-top">Back to Top</button>
+
+    <script>
+        $(document).ready(function() {
+          var backToTopButton = $('#back-to-top');
+
+          $(window).scroll(function() {
+            if ($(this).scrollTop() > 100) { // Show button after scrolling down 100px
+              backToTopButton.addClass('show');
+            } else {
+              backToTopButton.removeClass('show');
+            }
+          });
+
+          backToTopButton.click(function() {
+            $('html, body').animate({scrollTop: 0}, 800); // Smooth scroll to top
+          });
+        });
+      </script>
+</body>
+</html>
